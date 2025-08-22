@@ -197,7 +197,7 @@ export default function Page() {
             />
             <select
               value={source}
-              onChange={e => setSource(e.target.value as any)}
+              onChange={(e) => setSource(e.target.value as 'All' | Source)}
               style={{ padding: '10px 12px', borderRadius: 12, border: '1px solid #e5e7eb' }}
             >
               <option>All</option>
