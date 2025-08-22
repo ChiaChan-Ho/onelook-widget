@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Problem
+Students track deadlines across multiple portals (Canvas, Gradescope, Piazza, etc.). Switching tabs and manually consolidating causes missed work and constant anxiety.
 
-## Getting Started
+Solution — OneLook
+A compact widget that shows all upcoming deadlines in one place. Students can add items manually (or paste a quick CSV), filter by source, and sort by urgency. Each item surfaces “days left,” due time, and a direct link.
 
-First, run the development server:
+Why it helps
+Students save time, reduce context switching, and avoid surprises. The widget fits on a laptop sidebar and focuses on clarity: “What’s due next?”
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Scope
+Prototype uses local storage + mock data (no auth/API). Focus is UX clarity and production intuition: empty-state guidance, sensible defaults, quick add, and urgency colors.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Future Work
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Lightweight integrations (Canvas/Gradescope token flow)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+.ics export, calendar sync, reminders
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
+Team/peer sharing for group assignments
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
